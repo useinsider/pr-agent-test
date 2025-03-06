@@ -410,8 +410,6 @@ def get_pr_multi_diffs(git_provider: GitProvider,
         get_logger().error(f"Rate limit exceeded for git provider API. original message {e}")
         raise
 
-    diff_files = filter_ignored(diff_files)
-
     # Sort files by main language
     pr_languages = sort_files_by_main_languages(git_provider.get_languages(), diff_files)
 
