@@ -11,6 +11,6 @@ jobs:
         with:
           app-id: ${{ secrets.InsiderActionsApplication_APP_ID }}
           private-key: ${{ secrets.InsiderActionsApplication_PRIVATE_KEY }}
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
       - uses: pre-commit/action@v3.0.1

@@ -15,7 +15,7 @@ jobs:
           app-id: ${{ secrets.InsiderActionsApplication_APP_ID }}
           private-key: ${{ secrets.InsiderActionsApplication_PRIVATE_KEY }}
       - id: checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - id: dockerx
         name: Setup Docker Buildx
         uses: docker/setup-buildx-action@v2
